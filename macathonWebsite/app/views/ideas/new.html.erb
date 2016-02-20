@@ -1,10 +1,9 @@
 <h1>Idea Page</h1>
 
-
+   <div class="word">
    <%= form_for @idea do |i| %>
-      <%= i.text_field :name %>
-      <%= i.submit "Save", class: "btn btn-primary" %>
+   <%= i.text_field :name %>
+     <div class="save"> <%= i.submit "Save", class: "btn btn-primary" %> </div>
    <% end %>
-
-
+</div>
 
