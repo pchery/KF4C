@@ -1,9 +1,16 @@
 class IdeasController < ApplicationController
 
   def index
-   @idea = Idea.last	
-   #@ideas = Idea.limit(4).order("RANDOM()")
-   
+   @idea = Idea.last 	
+   @array = Idea.limit(4).order("RANDOM()")
+   @word1 = Idea.offset(rand(Idea.count)).second
+  # @word1 = Idea.limit(1).order("RANDOM()") 
+   @word2 = Idea.offset(rand(Idea.count)).first 
+   @word3 = Idea.offset(rand(Idea.count)).third
+   @word4 = Idea.offset(rand(Idea.count)).fourth
+
+
+#@array = [0,1,2,3,4]
   end
 
 
@@ -35,7 +42,7 @@ class IdeasController < ApplicationController
 
   private
    def idea_params
-    params.require(:idea).permit(:name)
+    params.require(:idea).permit(:idname)
   end
 
 

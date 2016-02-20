@@ -1,9 +1,9 @@
-<h1>Idea Page</h1>
-
-   <div class="word">
+<body class="page"><h1>Idea Page</h1>
+<h1 class="l1">What are you thinking?</h1>
+<div class="image">
    <%= form_for @idea do |i| %>
-   <%= i.text_field :name %>
-     <div class="save"> <%= i.submit "Save", class: "btn btn-primary" %> </div>
-   <% end %>
-</div>
-
+ <div class="word"><div class="textfield"> <%= i.text_field :idname %></div>
+    <div class="save"> <%= i.submit "Go", class: "btn btn-primary" %> </div>
+  </div>
+ <% end %>
+</body>

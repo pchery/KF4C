@@ -1,4 +1,4 @@
-
+<body class="page">
 <h1>Idea Page</h1>
 
    <%#div class="word">
@@ -16,10 +16,8 @@
   </tr>
 
  <% @ideas.each do |a| %>
-    <tr>
-      <td><%= a.name %></td>
-      <td><%= link_to 'Delete', idea_path(a), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-   </tr>
+      <tr><%= a.name %></tr>
+      <tr><%= link_to 'Delete', idea_path(a), method: :delete, data: { confirm: 'Are you sure?' } %></tr>
   <% end %>
 </table>
 
@@ -27,4 +25,4 @@
 
   <%#= link_to 'New', new_idea_path %>
 </div>
-
+</body>

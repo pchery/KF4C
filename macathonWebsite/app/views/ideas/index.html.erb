@@ -1,10 +1,31 @@
+<body class="page">
 <h1>Idea Page</h1>
-
-   <%#  @idea do |i| %>
-   <div class="word"><%= @idea.name %>
+   <div class="image">
+  <div class="word"><h2><%= @idea.idname %></h2>
    <%= button_to "Delete",  @idea , method: :delete, class: "btn btn-danger" %></div>
-   
 </br>
+</div>
 <%= link_to 'new', new_idea_path %>
 <%= link_to 'Random', rand_show_path %>
 
+<h2 class="w1"><%= @word1.idname %></h2>
+<h2 class="w2"><%= @word2.idname %> </h2>
+<h2 class="w3"><%= @word3.idname %> </h3>
+<h2 class="w4"><%= @word4.idname %> </h4>
+
+<table>
+  <tr>
+    <th>Idea</th>
+    <th> </th>
+    <th colspan = "3"></th>
+  </tr>
+
+  <% @array.each do |a| %>
+    <tr>
+      <td><%= a.idname %></td>
+      <td><%= link_to 'Delete', idea_path(a), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+   </tr>
+  <% end %>
+</table>
+</div>
+</body>
