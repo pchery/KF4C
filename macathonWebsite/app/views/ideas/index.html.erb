@@ -1,0 +1,10 @@
+<h1>Idea Page</h1>
+
+   <%#  @idea do |i| %>
+   <div class="word"><%= @idea.name %>
+   <%= button_to "Delete",  @idea , method: :delete, class: "btn btn-danger" %></div>
+   
+</br>
+<%= link_to 'new', new_idea_path %>
+<%= link_to 'Random', rand_show_path %>
+

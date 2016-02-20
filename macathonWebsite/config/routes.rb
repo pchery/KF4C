@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   resources :ideas
-  
+  get 'app/views/ideas/randShow.hmtl.erb' =>  'ideas#randShow',  as: :rand_show
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
