@@ -29,7 +29,7 @@ margin: auto; position: relative; top: 175px; text-align: center; }
   margin: auto; position: absolute;
   width: 300px; height: 300px;}
 
-.image1 {background-image: url("lightbulbwithLines.png");background-size: 100%;top:100px ;
+.image1 {background-image: url("lightbulbwithLines.png");background-size: 100%;top:200px ;
   right: 0;
   bottom: 0;
   left: 0;
@@ -58,17 +58,17 @@ margin: auto; position: absolute;
 
 .line1 {background-image: url("line1.jpg"); top: 200px; bottom : 0px; left: -300px; right: 0; margin: auto; position: relative; width: 100px; height: 30px;}
  
-.page {background-color: #00ffcc;} 
+.page {background-color: #93f5e2;} 
 
 .t1 {padding: 100px;}
 
-.w1 {text-align: center; top: 200px; bottom : 0px; left: -300px; right: 0; margin: auto; position: relative; width: 100px; height: 30px; border: solid;}
+.w1 {width: fit-content; height: fit-content;padding: 4px; text-align: center; top: 200px; bottom : 0px; left: -300px; right: 0; margin: auto; position: relative; border: solid;}
 
 
-.w2 {text-align: center; top: 20px; bottom : 0px; left: -150px; right: 0; margin: auto; position: relative; width: 100px; height: 30px; border: solid;}
+.w2 {padding:4px; text-align: center; top: 20px; bottom : 0px; left: -150px; right: 0; margin: auto; position: relative; width: fit-content; height: fit-content; border: solid;}
 
-.w3 {text-align: center; top: -16px; bottom : 0px; left: 150px; right: 0; margin: auto; position: relative; width: 100px; height: 30px; border: solid;}
+.w3 {padding: 4px; text-align: center; top: -16px; bottom : 0px; left: 150px; right: 0; margin: auto; position: relative; width: fit-content; height: fit-content; border: solid;}
 
-.w4 {text-align: center; top: 90px; bottom : 0px; left: 300px; right: 0; margin: auto; position: relative; width: 170px; height: 30px; border: solid;}
+.w4 {padding: 4px; text-align: center; top: 90px; bottom : 0px; left: 300px; right: 0; margin: auto; position: relative; width: fit-content; height: fit-content; border: solid;}
 
 .l1 {text-align: center;top:0; bottom: 300px; left: 50px; right: 0; margin: auto; position: absolute; width: 400px; height: 40px; border: solid;}
